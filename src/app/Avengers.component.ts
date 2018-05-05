@@ -27,6 +27,7 @@ avengers=[
 Add()
 {
  this.avengers.push({name:this.name,isFavorite:""})
+ this.name="";
 }
 dolike(character)
 {
