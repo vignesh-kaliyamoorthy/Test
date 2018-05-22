@@ -6,8 +6,6 @@ import {Component}  from '@angular/core';
     template: `   
     <div>{{name}} </div> 
     <input type="text" [(ngModel)]="name">
-
-
 <button (click)="Add()">ADD HERO </button>
     <div *ngFor="let c of avengers">
     <character [character]="c" (like)="dolike($event)"></character>
