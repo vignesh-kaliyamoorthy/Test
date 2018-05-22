@@ -8,7 +8,7 @@ import {Component}  from '@angular/core';
     <input type="text" [(ngModel)]="name">
 <button (click)="Add()">ADD HERO </button>
     <div *ngFor="let c of avengers">
-    <character [character]="c" (like)="dolike($event)"></character>
+    <character   [character]="c" (like)="dolike($event)"></character>
    
     </div>
     `
@@ -20,8 +20,8 @@ avengers=[
 {name:"Iron Man",isFavorite:":)"},
 {name:"Hulk",isFavorite:":)"}
 
-
 ];
+
 Add()
 {
  this.avengers.push({name:this.name,isFavorite:""})
